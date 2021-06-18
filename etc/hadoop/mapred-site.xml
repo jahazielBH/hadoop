@@ -15,7 +15,6 @@
 -->
 
 <!-- Put site-specific property overrides in this file. -->
-
 <configuration>
     <property>
             <name>mapreduce.framework.name</name>
@@ -33,17 +32,18 @@
             <name>mapreduce.reduce.env</name>
             <value>HADOOP_MAPRED_HOME=$HADOOP_HOME</value>
     </property>
-    <property>
-            <name>yarn.app.mapreduce.am.resource.mb</name>
-            <value>512</value>
-    </property>
-    <property>
-            <name>mapreduce.map.memory.mb</name>
-            <value>256</value>
-    </property>
+<property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>512</value>
+</property>
 
-    <property>
-            <name>mapreduce.reduce.memory.mb</name>
-            <value>256</value>
-    </property>
+<property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>256</value>
+</property>
+
+<property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>256</value>
+</property>
 </configuration>
